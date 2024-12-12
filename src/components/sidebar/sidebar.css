@@ -1,0 +1,20 @@
+.sidebar {
+    overflow-y: auto; /* Scrollable if content exceeds height */
+    overflow-x: hidden  !important; /* Prevent horizontal overflow */
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px; /* Adjust based on extended width */
+    min-width: 60px; /* Collapsed state width */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  .sidebar .recent{
+    animation: fadeIn 1.5s;
+  }
+  @media (max-width:600px){
+    .sidebar{
+      display: none !important;
+    }
+  }
